@@ -102,7 +102,7 @@ p {
 @media screen and (max-width: 725px) {
     .img-top {
         position: absolute; 
-        top: 15%;
+        top: 17%;
         left: 26%;
         width: 50vw;
     }
