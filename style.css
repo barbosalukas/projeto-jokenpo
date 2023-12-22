@@ -101,7 +101,10 @@ p {
 
 @media screen and (max-width: 725px) {
     .img-top {
-        display: none; /* Ocultar a imagem em telas menores */
+        position: absolute; 
+        top: 15%;
+        left: 26%;
+        width: 50vw;
     }
     
     .title {
@@ -122,3 +125,4 @@ p {
 
     }
 }
+
