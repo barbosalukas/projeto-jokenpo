@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô</title>
+</head>
+<body>
+    <header>
+    <h1 class="title">Desafie o Chris no Jokenpô: Vença o Carinha que Mora Logo Ali em um Jogo de Pedra, Papel e Tesoura!</h1>
+    </header>
+    <img src="assets/logo-chris.png" alt="Logo Chris" class="img-top">
+    
+    <div class="container">
+        
+
+        <div class="buttons">
+            <button class="rock" onclick="playHuman('rock')">&#x1F44a;</button>
+            <button class="paper" onclick="playHuman('paper')">&#x1f590;</button>
+            <button class="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+        </div>
+
+        <p class="result"></p>
+        <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score">Pontuação do Chris: <span id="machine-score">0</span></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

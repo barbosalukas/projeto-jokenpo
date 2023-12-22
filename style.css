@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/fundo-chris.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 4%;
+
+}
+
+.title {
+    color: #0D0A0B;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.501);
+    font-size: 43px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.img-top {
+    position: absolute;
+    top: 11%;
+    left: 6%;
+    width: 19vw;
+}
+
+.container {
+    position: absolute;
+    top: 34%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    border: none;
+
+}
+
+.buttons {
+    margin: 50px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 20px;
+    font-size: 55px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.rock {
+    background-color: #CEFF32;
+}
+
+.paper {
+    background-color: #3636F5;
+}
+
+.scissors {
+    background-color: #6F7C12;
+}
+
+
+p {
+    color: #0D0A0B;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.your-score span {
+
+    color: #6F7C12;
+}
+
+.machine-score span {
+    color: #3636F5;
+}
+
+@media screen and (max-width: 725px) {
+    .img-top {
+        display: none; /* Ocultar a imagem em telas menores */
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+
+    .container {
+        left: 5%;
+        width: 90%; /* Ajuste a largura em telas menores */
+    }
+
+    .buttons {
+        flex-direction: row; /* Restaure a direção da coluna para telas maiores */
+    }
+
+    button {
+        font-size: 18px;
+
+    }
+}
